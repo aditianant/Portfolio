@@ -1,0 +1,319 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+      integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body>
+    <div id="home">
+      <div class="nav-container">
+        <nav>
+          <img src="images/logo.png" class="logo" />
+          <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#works">Works</a></li>
+            <li><a href="#experience">Experiences</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </nav>
+
+        <div class="nav-text">
+          <h1>
+            Hello, I am <br /><span><a href="#about">ADITI ANANT</a></span>
+          </h1>
+          <p>UG Pre-Final Student</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- .............................About Me.............................. -->
+    <div id="about">
+      <div class="row">
+        <div class="col1">
+          <img src="images/mypic.png" />
+        </div>
+        <div class="col2">
+          <h1>About Me</h1>
+          <p>
+            To enhance my skills and to become a good coder and electronics
+            developer <br />
+            in the field of Electronics Department. <br />
+            I would like to see myself in a position where I can contribute to
+            the industrial and social success. <br />I do believe to meet my
+            goals and accomplish achievements. <br />
+            I aspire to take on leadership roles, foster innovation, and achieve
+            a work-life balance <br />
+            that allows for personal fulfillment and meaningful contributions to
+            my chosen profession. <br />
+          </p>
+          <div class="tab-title">
+            <p class="link active" onclick="opentab('skills')">Skills</p>
+            <p class="link" onclick="opentab('interests')">Interests</p>
+            <p class="link" onclick="opentab('languages')">Languages</p>
+          </div>
+          <div class="tab-content active-tab" id="skills">
+            <ul>
+              <li>
+                <span>Softwares</span><br />
+                ARM <br />
+                Keil <br />
+                Multisim <br />
+                Modelsim <br />
+                Cadence Virtuoso
+              </li>
+              <li>
+                <span> Web Development</span> <br />
+                HTML5 <br />
+                CSS3 <br />
+                JavaScript <br />
+              </li>
+            </ul>
+          </div>
+          <div class="tab-content" id="interests">
+            <ul>
+              <li>
+                <span>Games</span><br />
+                Indoors <br />
+                Basketball <br />
+              </li>
+              <li>
+                <span>Hobbies</span><br />
+                Reading<br />
+                Cartoon Drawing <br />
+                Listening Music <br />
+                Travelling & Exploring <br />
+              </li>
+            </ul>
+          </div>
+          <div class="tab-content" id="languages">
+            <ul>
+              <li>
+                <span>Spoken</span><br />
+                Hindi<br />
+                English<br />
+                French <br />
+              </li>
+              <li>
+                <span> Programming</span> <br />
+                Java <br />
+                C <br />
+                C++ <br />
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- ..............................Works........................... -->
+    <div id="works">
+      <h1 class="title">Works</h1>
+      <div class="container">
+        <div class="col01">
+          <div class="pro-title">
+            <i class="fa-solid fa-school" style="color: #7e1111"></i>
+            <h2><u>Education</u></h2>
+          </div>
+          <div class="grad">
+            <div class="edu1">
+              <div class="edu11">Bachelor of Technology (E.C.E.)</div>
+              <div class="edu12">9.46 CGPA</div>
+            </div>
+            <div class="edu2">
+              <div class="edu21">
+                <i class="fa-solid fa-link" style="color: #970d0d"></i>
+                <a href="https://vit.ac.in/" target="_blank"
+                  >Vellore Institute of Technology, Vellore</a
+                >
+              </div>
+              <div class="edu22">2021-2025</div>
+            </div>
+          </div>
+          <div class="inter">
+            <div class="edu1">
+              <div class="edu11">Intermediate</div>
+              <div class="edu12">94.20 %</div>
+            </div>
+            <div class="edu2">
+              <div class="edu21">
+                <i class="fa-solid fa-link" style="color: #970d0d"></i>
+                <a href="https://donboscopatna.com/" target="_blank"
+                  >Don Bosco Academy, Patna, Bihar</a
+                >
+              </div>
+              <div class="edu22">2019-2021</div>
+            </div>
+          </div>
+          <div class="matric">
+            <div class="edu1">
+              <div class="edu11">Matriculation</div>
+              <div class="edu12">93.16 %</div>
+            </div>
+            <div class="edu2">
+              <div class="edu21">
+                <i class="fa-solid fa-link" style="color: #970d0d"></i>
+                <a href="https://donboscopatna.com/" target="_blank"
+                  >Don Bosco Academy, Patna, Bihar</a
+                >
+              </div>
+              <div class="edu22">2018-2019</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col02">
+          <div class="pro-title">
+            <i class="fa-solid fa-laptop" style="color: #a41313"></i>
+            <h2><u>Projects</u></h2>
+          </div>
+          <div class="edu1">Hardware & Simulation</div>
+          <div class="edu2">
+            <div class="pro11">Laser Security Alarm System using LDR</div>
+            <div class="pro12">2022</div>
+          </div>
+          <div class="edu2">
+            <div class="pro11">Social Distancing Sensors using IoT</div>
+            <div class="pro12">2022</div>
+          </div>
+          <div class="edu1">Web Designing</div>
+          <div class="edu2">
+            <div class="edu21">
+              <i class="fa-solid fa-link" style="color: #970d0d"></i>
+              <a
+                href="https://aditianant.github.io/CommercialClone/"
+                target="_blank"
+                >Commercial Website Clone</a
+              >
+            </div>
+            <div class="pro12">2023</div>
+          </div>
+          <div class="edu2">
+            <div class="edu21">
+              <i class="fa-solid fa-link" style="color: #970d0d"></i>
+              <a
+                href="https://aditianant.github.io/CollegeLoginClone/"
+                target="_blank"
+                >Institutional Login Clone</a
+              >
+            </div>
+            <div class="pro12">2023</div>
+          </div>
+          <div class="edu2">
+            <div class="edu21">
+              <i class="fa-solid fa-link" style="color: #970d0d"></i>
+              <a
+                href="https://aditianant.github.io/AcademyOfUnderstanding/"
+                target="_blank"
+                >Academy of Understanding Webpage</a
+              >
+            </div>
+            <div class="pro12">2023</div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- .........................Experiences.......................... -->
+    <div id="experience">
+      <div class="exp">
+        <h1>Experiences</h1>
+        <h4>Member Secretary (2023 - present)</h4>
+        <div class="intern">
+          <h3>Internships & Trainings (2023)</h3>
+          <div class="edu2">
+            <div class="exp11">VLSI Core Methodologies @ Maven-Silicon</div>
+          </div>
+        </div>
+        <div class="certif">
+          <h3>Certifications</h3>
+          <div class="exp-lines">
+            Internship in VLSI Core from Maven-Silicon. <br />
+            Embedded Technology of Internet of Things (IoT). <br />
+            Machine Learning & Data Analysis from IIT Guwahati Consulting &
+            Analytics Club. <br />
+            Cloud Computing from Coursera. <br />
+            Silver Medal in General Knowledge olympiad. <br />
+          </div>
+        </div>
+        <div class="club">
+          <h3>Clubs & Chapters</h3>
+          <div class="exp-lines">
+            Currently presenting the Institute as a Member Secretary. <br />
+            Held the position of Council Member for 2 years. <br />
+            Core Committee member of IEEE-PCS Technical & Management Domains.
+            <br />
+            Member of Anokha NGO, and Nature Lover's Club.
+          </div>
+        </div>
+      </div>
+    </div>
+    <hr />
+    <!-- .................................Contact Details.............................. -->
+    <div id="contact">
+      <div class="sub-contact">
+        <div class="sub-title"><h1>Contact Details</h1></div>
+        <div class="right-col">
+          <div class="phone">
+            <i class="fa-solid fa-envelope" style="color: #08ebe7"></i>
+            <p>aditi.aka099@gmail.com</p>
+          </div>
+          <div class="phone">
+            <i class="fa-solid fa-mobile" style="color: #08ebe7"></i>
+            <p>+91 8340113766</p>
+          </div>
+          <div class="social-icons">
+            <a
+              href="https://www.linkedin.com/in/aditi-anant-066054222/"
+              target="_blank"
+              ><i class="fa-brands fa-linkedin" style="color: #08ebe7"></i
+            ></a>
+            <a href="https://github.com/aditianant" target="_blank"
+              ><i class="fa-brands fa-github" style="color: #08ebe7"></i
+            ></a>
+            <a href="https://www.instagram.com/" target="_blank"
+              ><i class="fa-brands fa-instagram" style="color: #08ebe7"></i
+            ></a>
+            <a href="https://www.facebook.com/" target="_blank"
+              ><i class="fa-brands fa-facebook" style="color: #08ebe7"></i
+            ></a>
+          </div>
+          <div class="cv" download="">
+            <a href="images/CV_AditiAnant.pdf">Download CV</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- ..........................Copyright............................. -->
+    <footer>
+      <div class="copyright">&copy; Copyright @ 2023 Aditi Anant Portfolio</div>
+    </footer>
+
+    <!-- .............................JavaScript.......................... -->
+    <script>
+      var tablinks = document.getElementsByClassName("link");
+      var tabcontents = document.getElementsByClassName("tab-content");
+
+      function opentab(tabname) {
+        for (tablink of tablinks) {
+          tablink.classList.remove("active");
+        }
+        for (tabcontent of tabcontents) {
+          tabcontent.classList.remove("active-tab");
+        }
+        event.currentTarget.classList.add("active");
+        document.getElementById(tabname).classList.add("active-tab");
+      }
+    </script>
+  </body>
+</html>

@@ -1,0 +1,305 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "poppins", "sans-serif";
+}
+html {
+  scroll-behavior: smooth;
+}
+body {
+  color: #000;
+}
+#home {
+  height: 100vh;
+  width: 100%;
+  background-image: url("images/back_img.jpg");
+  background-size: cover;
+  background-position: center;
+}
+.nav-container {
+  padding: 0.1% 10%;
+}
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.logo {
+  height: 130px;
+  width: 180px;
+}
+nav ul li {
+  display: inline-block;
+  list-style-type: none;
+  margin: 1rem 1.5rem;
+}
+nav ul li a {
+  text-decoration: none;
+  color: #000;
+  font-size: 1.4rem;
+  font-weight: 600;
+}
+nav ul li a:hover {
+  color: red;
+  font-size: 1.5rem;
+  font-weight: 700;
+}
+
+.nav-text {
+  margin: 15% 2%;
+  font-size: 1.8rem;
+}
+.nav-text h1 a {
+  color: rgb(228, 103, 13);
+  text-decoration: none;
+}
+
+/* .................................About Me............................... */
+#about {
+  background-image: url("images/about-back.jpg");
+  background-size: cover;
+  background: linear-gradient(#ffebf2, rgb(252, 200, 209));
+  padding: 5px 100px;
+  font-size: 1.2rem;
+}
+.row {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+.col1 {
+  flex-basis: 40%;
+}
+.col1 img {
+  height: 85%;
+  width: 60%;
+  border-radius: 6%;
+}
+.col2 {
+  flex-basis: 60%;
+}
+.col2 h1 {
+  font-size: 3rem;
+  font-weight: 600;
+}
+.tab-title {
+  display: flex;
+  margin: 5% 0%;
+}
+.link {
+  margin-right: 5%;
+  font-size: 1.4rem;
+  font-weight: 600;
+  position: relative;
+  cursor: pointer;
+}
+.link::after {
+  content: "";
+  width: 0;
+  height: 3px;
+  background: red;
+  position: absolute;
+  left: 0;
+  bottom: -8px;
+  transition: 0.5s;
+}
+.link.active::after {
+  width: 50%;
+}
+.tab-content ul li {
+  margin: 5% 0%;
+  list-style: none;
+}
+.tab-content ul li span {
+  color: rgb(151, 13, 13);
+  font-size: larger;
+  font-weight: 600;
+}
+.tab-content {
+  display: none;
+}
+.tab-content.active-tab {
+  display: block;
+}
+
+/* ................................Works........................... */
+#works {
+  padding: 1% 6%;
+  background: linear-gradient(rgb(252, 200, 209), #d5aee8);
+}
+.title {
+  text-align: center;
+  padding: 2% 2%;
+  font-size: 2.8rem;
+}
+.title:hover {
+  color: rgb(151, 13, 13);
+  cursor: pointer;
+}
+.container {
+  display: flex;
+  justify-content: space-between;
+}
+.col01 {
+  padding: 2% 2%;
+  width: 45%;
+  border: 2px solid black;
+  border-radius: 1.2rem;
+  transform: translate(0, 0);
+  transition-duration: 1s;
+  transition-timing-function: ease-out;
+  background-image: url("images/edu.jpg");
+  background-size: cover;
+  opacity: 0.8;
+}
+.col01:hover {
+  opacity: 2;
+  transform: translate(0, 15px);
+  transition-duration: 1s;
+  transition-timing-function: ease-in;
+}
+.edu1 {
+  display: flex;
+  justify-content: space-between;
+  font-size: 1.2rem;
+  font-weight: 600;
+  padding-top: 10px;
+}
+.edu2 {
+  display: flex;
+  justify-content: space-between;
+  padding-left: 10px;
+  font-size: 1.02rem;
+}
+.edu21 a {
+  text-decoration: none;
+  color: #000;
+}
+.edu21 a:hover {
+  color: rgb(151, 13, 13);
+  font-weight: 550;
+}
+
+.col02 {
+  padding: 2% 2%;
+  width: 45%;
+  border: 2px solid black;
+  border-radius: 1.2rem;
+  transform: translate(0, 0);
+  transition-duration: 1s;
+  transition-timing-function: ease-out;
+  background-image: url("images/projects.jpg");
+  background-size: cover;
+  opacity: 0.8;
+}
+.col02:hover {
+  opacity: 2;
+  transform: translate(0, 15px);
+  transition-duration: 1s;
+  transition-timing-function: ease-in;
+}
+.pro-title {
+  display: flex;
+  color: rgb(151, 13, 13);
+}
+.pro-title i {
+  font-size: 1.6rem;
+  padding-right: 2%;
+}
+
+/* .............................Experiences............................. */
+#experience {
+  padding: 0.01% 0%;
+  background: linear-gradient(#d5aee8, #974ec3);
+}
+.exp {
+  margin: 3% 28%;
+  padding: 2% 2%;
+  border: 2px solid black;
+  border-radius: 1.2rem;
+  background: linear-gradient(#dcedf4, #7fd3f8);
+  transition-duration: 1s;
+  transition-timing-function: linear;
+}
+.exp:hover {
+  background-image: url("images/experience.jpg");
+  background-size: cover;
+  transform: scale(1.1);
+  transition-duration: 1s;
+  transition-timing-function: ease-in;
+}
+.exp h1 {
+  text-align: center;
+  font-size: 2.6rem;
+}
+.exp h4 {
+  text-align: center;
+  padding-bottom: 4%;
+  color: rgb(151, 13, 13);
+  font-size: 1.2rem;
+}
+.exp h3 {
+  padding: 2% 0%;
+}
+.exp-lines {
+  padding: 0% 2%;
+}
+hr {
+  color: black;
+}
+/* ............................Contact Details............................. */
+#contact {
+  padding: 2% 30%;
+  background: linear-gradient(#974ec3, rgb(112, 4, 112));
+  color: #ffffffe0;
+}
+.sub-contact {
+  font-size: 1.2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.phone {
+  display: flex;
+  padding: 2.5% 0%;
+}
+.phone i {
+  margin-right: 1.5%;
+}
+.social-icons {
+  font-size: 1.6rem;
+}
+.social-icons i {
+  padding-right: 3%;
+  transition-duration: 0.5s;
+}
+.social-icons i:hover {
+  transition-duration: 0.5s;
+  font-size: 2rem;
+}
+.cv {
+  width: 65%;
+  text-align: center;
+  margin: 4% 0%;
+  padding: 3% 0%;
+  border: 2px solid white;
+  border-radius: 0.5rem;
+  background-color: #08ebe7;
+}
+.cv a {
+  text-decoration: none;
+  color: #000;
+  font-weight: 600;
+}
+
+/* ........................Copyright.................... */
+.copyright {
+  background: linear-gradient(rgb(112, 4, 112), rgb(63, 1, 63), rgb(51, 0, 51));
+  color: rgb(189, 187, 187);
+  padding: 1% 0%;
+  text-align: center;
+  font-weight: 600;
+}
